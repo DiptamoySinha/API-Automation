@@ -1,0 +1,166 @@
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "diptamoy@gmail.com",
+    "password": "123456"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"d9-DsAsN2/HC6QbiAB8HDHvRj/Pceo"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly
+date: Mon, 15 Jan 2024 17:51:35 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Login successful",
+    "data": {
+        "id": "65a54177da3d7a0141946f5b",
+        "name": "mark",
+        "email": "diptamoy@gmail.com",
+        "token": "fab56145bc474eb0aa81f4cd3e9892e8f59bd1abb4f74d63968f86d04652d31c"
+    }
+}
+Request method:	POST
+Request URI:	https://practice.expandtesting.com/notes/api/notes/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-auth-token=fab56145bc474eb0aa81f4cd3e9892e8f59bd1abb4f74d63968f86d04652d31c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "self help",
+    "description": "don't overthink, just believe in action",
+    "category": "Home"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"151-XutLBK7/sUW0BLe+mkAHpU0ahu4"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly
+date: Mon, 15 Jan 2024 17:51:37 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Note successfully created",
+    "data": {
+        "id": "65a570a9da3d7a0141946fd2",
+        "title": "self help",
+        "description": "don't overthink, just believe in action",
+        "category": "Home",
+        "completed": false,
+        "created_at": "2024-01-15T17:51:37.409Z",
+        "updated_at": "2024-01-15T17:51:37.409Z",
+        "user_id": "65a54177da3d7a0141946f5b"
+    }
+}
+Request method:	GET
+Request URI:	https://practice.expandtesting.com/notes/api/notes/65a570a9da3d7a0141946fd2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-auth-token=fab56145bc474eb0aa81f4cd3e9892e8f59bd1abb4f74d63968f86d04652d31c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"153-QE+DsOR1FCMOIAFn13/KZMidC0c"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly
+date: Mon, 15 Jan 2024 17:51:38 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Note successfully retrieved",
+    "data": {
+        "id": "65a570a9da3d7a0141946fd2",
+        "title": "self help",
+        "description": "don't overthink, just believe in action",
+        "category": "Home",
+        "completed": false,
+        "created_at": "2024-01-15T17:51:37.409Z",
+        "updated_at": "2024-01-15T17:51:37.409Z",
+        "user_id": "65a54177da3d7a0141946f5b"
+    }
+}
+Request method:	DELETE
+Request URI:	https://practice.expandtesting.com/notes/api/notes/65a570a9da3d7a0141946fd2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-auth-token=fab56145bc474eb0aa81f4cd3e9892e8f59bd1abb4f74d63968f86d04652d31c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST, PUT, DELETE, PATCH
+access-control-allow-headers: Origin, X-Requested-With, Authorization, Content-Type, Accept, X-Auth-Token
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+etag: W/"43-NRjYUraIosLt+x2lOOhDKG8vqCU"
+set-cookie: express:sess=eyJmbGFzaCI6e319; path=/; httponly
+set-cookie: express:sess.sig=tdt42nQZiQvICqmrvHQ1_16fHk0; path=/; httponly
+date: Mon, 15 Jan 2024 17:51:39 GMT
+connection: keep-alive
+keep-alive: timeout=5
+transfer-encoding: chunked
+
+{
+    "success": true,
+    "status": 200,
+    "message": "Note successfully deleted"
+}
